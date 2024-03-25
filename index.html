@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N4A6UgpDnjRMpMcTtQ2qVMyVnZ91l3xqihL4v3c4BtMBAB5pJX4tiUCPLO0z5CGLBZK0bpRht7VwcMZ7pPVSEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- css-->
+        <link rel="stylesheet" href="../Estilos/estilosCV.css">
+
+        <title>Responsive portfolio website - Lucas Sarfati</title>
+    </head>
+<body>
+    <!------------------------------------------------------------ STYLE SWITCHER ------------------------------------------------------------>
+    <div class="style__switcher"></div>
+
+    <!--------------------------------------------------------------HEADER----------------------------------------------------------------->
+    <header class="header">
+        <nav class="nav container">
+            <a href="LucasSarfati.html" class="nav__logo">Lucas</a>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Sobre mi</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#experiencia" class="nav__link">Experiencia</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#servicios" class="nav__link">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portafolio" class="nav__link">Portafolio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contacto" class="nav__link">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!------------------------------------------------------------ MAIN ------------------------------------------------------------>
+
+    <main class="main">
+
+    <!------------------------------------------------------------ HOME ------------------------------------------------------------>
+
+        <section class="home" id="home" >
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__small">Hola</span>
+                    <h1 class="home__title">
+                        <span>Yo soy </span>Lucas<br />
+                        un <span>Programador especializado en back-end</span>
+                    </h1>
+
+                    <p class="home__description">Estudiante apasionado de la tecnología y análisis de sistemas, 
+                        con experiencia autodidacta en desarrollo de sistemas. Busco sumarme a proyectos 
+                        desafiantes donde pueda aplicar y ampliar mis habilidades. Me entusiasma colaborar en equipo
+                         y aprender de manera constante.</p>
+                    <div class="home__btns">
+                        <a href="#contacto" class="btn">Contratar</a>
+                        <a href="#portafolio" class="btn btn--transparent">Portafolio</a>
+                    </div>    
+                </div>
+
+
+                
+                    <img src="../img/Home.jpeg" alt="" class="home__img">
+                
+            </div>
+        </section>
+
+
+    <!------------------------------------------------------------ ABOUT ------------------------------------------------------------>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__img-wrapper">
+                    <img src="../img/Home.jpeg" alt="" class="about__img">
+                    <img src="../img/Home.jpeg" alt="" class="about__img">
+                    <img src="../img/Home.jpeg" alt="" class="about__img">
+                    <img src="../img/Home.jpeg" alt="" class="about__img">
+                </div>
+                <div class="about__content">
+                    <h2 class="section__title" data-title="Who am i"> Yo soy Lucas Sarfati, un programador especializado en back end</h2>
+
+                    <p class="about__description">Soy un entusiasta de la tecnología, empece mi formacion hace 4 años, hice varios bootcamps,
+                         cursos y arranque la carrera en analisis de sistema.
+                         Tambien hice proyectos personales, ultimamente estaba trabajando con tecnologías como
+                           Docker Java SpringBoot APIs POO MySQL Jpa html Css y Javascript. Me encantaría formar parte de proyectos desafiantes. 
+                           Estoy emocionado por introducirme en el mundo de la tecnología y aprender más sobre el desarrollo de aplicaciones.
+                    </p>
+
+                        <ul class="about__data grid">
+                            <li class="data__item">
+                                <h3 class="data__title">Name:</h3>
+                                <span class="data__description">Lucas Sarfati</span>
+                            </li>
+                            
+                            <li class="data__item">
+                                <h3 class="data__title">Age:</h3>
+                                <span class="data__description">23 Años</span>
+                            </li>
+                            
+                            <li class="data__item">
+                                <h3 class="data__title">From:</h3>
+                                <span class="data__description">Buenos Aires, Argentina</span>
+                            </li>
+                            
+                            <li class="data__item">
+                                <h3 class="data__title">Email:</h3>
+                                <span class="data__description about__link">sarfatilucas1@gmail.com</span>
+                            </li>
+                        </ul>
+
+                        <div class="about__bottom">
+                            <a href="" class="btn">Download Cv</a>
+
+                            <div class="about__social-links">
+                            
+                                <a href="https://www.linkedin.com/in/lucas-sarfati-097419199/" class="about__social-link">
+                                    <img src="../iconos/sociallinkedin_member_70.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!------------------------------------------------------------ QUALIFICATION ------------------------------------------------------------>
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title title-center" data-title="My Journey">
+                Qualification
+            </h2>
+                            <!-- Container grid-->
+            <div class="resume__container container grid" >
+                <!-- Grupo de resumen-->
+                <div class="resume__group">
+                    
+                    <h3 class="resume__heading">Educacion</h3>
+                        <!-- Container items-->
+                    <div class="resume__items">
+                        <!-- items-->
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Bootcamp Crisalis 2da Fase</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Finnegans - Practica profesional desarrollador Full Stack</h3>
+                                    <span class="resume__date">2024 enero - 2024 marzo (3 meses)</span>
+                                </div>
+
+                                <p class="resume__description">Fuimos introducidos a la empresa, utilizamos la aplicacion principal,
+                                     aprendimos a crear entidades con java en su framework y manipularlas, creacion de stored procedures con consultas, creacion de tablas, crear informes,
+                                      reportes, frontend con xml y javascript. 
+                                      <br>En esta fase del bootcamp hicimos practicas llevadas a produccion.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Bootcamp Crisalis 1ra Fase</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Desarrollador Full Stack</h3>
+                                    <span class="resume__date">2024 enero - 2024 marzo (3 meses)</span>
+                                </div>
+
+                                <p class="resume__description">Construimos un sistema de gestion con Java Spring Boot para el back end, el front end lo hicimos con React base de datos Postgre en un Docker y Tailwand para los estilos</p>
+
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Guayerd Bootcamp Salesforce</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Desarrollador salesforce</h3>
+                                    <span class="resume__date">Marzo 2023 - Julio 2024(4 meses)</span>
+                                </div>
+
+                                <p class="resume__description">Formación de salesforce con mas de 250 horas de cursada, haciendo trails de trailhead, proyectos grupales, una practica y mejorando las habilidades blandas trabajando con mis compañeros.
+                                    Aprendimos mucho sobre el CRM, sus funciones y el alcance que tiene. A personalizar la aplicacion para cumplir con los requisitos. Trabajamos bajo la metodologia SCRUM con Trello.
+                                </p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Curso de Data y analytics - Analitica Noviembre</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Data y analytics</h3>
+                                    <span class="resume__date">2022 noviembre - Diciembre 2022(2 meses)</span>
+                                </div>
+
+                                <p class="resume__description">Curso de Data & Analytics donde aprendí a hacer la ingesta de los datos, limpiarlos, transformarlos, integrarlos y finalmente guardarlos en una base de datos en la nube de Azure, todo este proceso usando notebooks de databricks . También aprendimos a analizar los datos e interpretarlos, a crear una documentación del proyecto y realizar una presentación para que lo puedan entender todas las personas.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">I.F.T.S N°12(Instituto de formación técnica superior) </h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Técnico superior en análisis de sistemas</h3>
+                                    <span class="resume__date"><br>Marzo 2022 - Actualidad</span>
+                                </div>
+
+                                <p class="resume__description">Materias aprobadas 11/30 36,6%:
+                                    <br>- Arquitectura de las computadoras
+                                    <br>- Lógica computacional
+                                    <br>- Diagramación Lógica
+                                    <br>- Estructura de la organización
+                                    <br>- Introducción a las tic’s
+                                    <br>- Estructura de datos
+                                    <br>- Paradigmas de programacion
+                                    <br>- Contabilidad básica y de costos
+                                    <br>- Algebra lineal
+                                    <br>- Ingeniería de software
+                                    <br>- Practica profesional de observación 1</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Educacion IT</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Java web programming</h3>
+                                    <span class="resume__date">2020 marzo - 2020 Julio (4 meses)</span>
+                                </div>
+
+                                <p class="resume__description">Clases, atributos y métodos. Casting y Polimorfismo. Introducción a JSP. Diseño de interfaz gráfica HTML y JSP. Diseñar y construir Excepciones. Java Database Connectivity. Administrador de conexiones. Tipos de Colecciones. Interfaz Queue y LinkedList. Arquitectura Cliente Servidor. Streams y Algoritmos. Desarrollo de Apps comerciales. Servlets. Lambda</p>
+                                
+                            </div>
+                        </div>
+
+                        
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Educacion IT</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Introduccion a bases de datos y SQL</h3>
+                                    <span class="resume__date">2019 octubre - 2019 diciembre (3 meses)</span>
+                                </div>
+
+                                <p class="resume__description">Fundamentos de las Bases de Datos. Lenguaje SQL. Estructuras de consulta. Operadores, cláusulas y sentencias. Manipulación de datos. Construcción de un modelo de Base de Datos.</p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="resume__group">                 
+                    <h3 class="resume__heading">Proyectos</h3>
+                        <!-- Container items-->
+                    <div class="resume__items">
+                        <!-- items-->
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Bootcamp Crisalis 2da Fase</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Backend Programming</h3>
+                                    <span class="resume__date">2024 enero - 2024 marzo (3 meses)</span>
+                                </div>
+
+                                <p class="resume__description"> <p class="resume__description">-Integracion de la app de Finnegans con Jira Microservicio con springboot
+                                    <br>-Importador de usuarios con excel y creacion de empresa y sucursal automatico
+                                    <br>-Crud de entidades, abm reportes informes
+                                    <br>-Stored procedures de consultas SQL a la base de data
+                                    <br>-Apis de crud
+                                    <br>
+                                    
+                                </p></p>
+
+                            </div>
+                        </div>
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Bootcamp crisalis Fase 1 - Finnegans</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Desarrollador Full stack</h3>
+                                    <span class="resume__date">2023 Sept - 2023 Diciembre (3 meses)</span>
+                                </div>
+
+                                <p class="resume__description">Sistema de gestion con distintos maestros, Clientes, empresas, organizaciones, productos, servicios, impuestos, usuarios,
+                                     un Login con token y sesiones. Facturas de ventas, reportes en base a eso, suscripciones</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Guayerd Bootcamp - Salesforce Developer</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">CRM Salesforce Developer - Practica Profesionalizante</h3>
+                                    <span class="resume__date">2023 Marzo - 2023 Junio (4 meses)</span>
+                                </div>
+
+                                <p class="resume__description">Practica para una fundación sin fines de lucro, "Wingu". Después de un análisis exhaustivo de los requerimientos para adaptar la aplicación a las necesidades específicas de la fundación. Desarrollamos una aplicación Lightning para gestionar donaciones y campañas. Implementamos páginas de Visualforce, triggers y clases de Apex, junto con formularios web y manuales. Utilizamos diferentes tipos de objetos para capturar la información relevante y personalizamos las secciones para mejorar la experiencia de usuario. Además, creamos un dashboard y reportes personalizados para proporcionar información valiosa sobre el rendimiento de las campañas y las donaciones.</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Analitica Noviembre</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">NBA Analisis</h3>
+                                    <span class="resume__date">2022 Noviembre - Diciembre 2022 (2 meses)</span>
+                                </div>
+
+                                <p class="resume__description">
+                                    Sumergido en el universo de la NBA, este proyecto personal abordó un conjunto de datos integral sobre jugadores, equipos y estadísticas. Comencé al importar datos desde diversas fuentes, aplicando luego limpieza y transformación para garantizar la calidad y coherencia. Además de optimizar los tipos de datos y nombres de columnas, creé nuevas métricas que profundizaron en la información. Mediante operaciones de JOIN, logré reunir datos cruciales para mis análisis.
+                                    
+                                    El núcleo del proyecto se centró en el análisis de datos, donde detecté patrones y tendencias mediante visualizaciones y análisis estadístico. A medida que avanzaba, documenté cada etapa y culminé con una presentación en PowerPoint que narraba visualmente el viaje a través de los datos. El proyecto no solo mejoró mis capacidades analíticas, sino que también me permitió contar una historia atractiva sobre el mundo de la NBA.</p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!------------------------------------------------------------ SERVICES ------------------------------------------------------------>
+
+        <section class="services section" id="services">
+            <h2 class="section__title title-center" data-title="Servoces">
+                What I do for you
+            </h2>
+
+            <div class="services__container container grid">
+                <div class="services__item">
+                    <i class="fa-solid fa-pen-to-square services__icon"></i>
+                    <h3 class="services__title">Desarrollo web Back-end</h3>
+                    <p class="services_description">Apis con Spring Boot, POO, modelado de datos, patrones de diseño(Dto, builder, singleton),
+                                                     clases, consultas a la BD, JPA, 
+                                                     logica de negocio dependiendo de los requisitos. Modularizacion del codigo. Documentacion en Swagger. Peticiones con Postman</p>
+                    
+                    <span class="services__no">02</span>
+                </div>
+                <div class="services__item">
+                    <i class="fa-solid fa-pen-to-square services__icon"></i>
+                    <h3 class="services__title">Desarrollo web Front-end</h3>
+                    <p class="services_description">Desarrollo del front-end especifico a los requisitos, HTML-CSS-Javascript. Nav, Menu, bar, Footer, objetos,  grillas, obtencion de los datos del back end</p>
+                    
+                    <span class="services__no">03</span>
+                </div>
+                <div class="services__item">
+                    <i class="fa-solid fa-pen-to-square services__icon"></i>
+                    <h3 class="services__title">Extraccion de datos y limpieza de datos</h3>
+                    <p class="services_description">Extraccion de las distintas fuentes de datos, limpieza de los datos, modelado de datos. 
+                        
+                    </p>
+                    
+                    <span class="services__no">05</span>
+                </div>
+                <div class="services__item">
+                    <i class="fa-solid fa-pen-to-square services__icon"></i>
+                    <h3 class="services__title">Analisis de datos</h3>
+                    <p class="services_description">Analisis de los datos, inteligencia del negocio, creacion de dashboards especificos, distintos graficos, kpis, Storytelling del proyecto</p>
+                    
+                    <span class="services__no">06</span>
+                </div>
+                <div class="services__item">
+                    <i class="fa-solid fa-pen-to-square services__icon"></i>
+                    <h3 class="services__title">Desarrollo Salesforce</h3>
+                    <p class="services_description">Personalizacion de la org, administracion de los registros, creacion de entidades, tabs, clases apex, triggers, SOQL, Flow, </p>
+                    
+                    <span class="services__no">07</span>
+                </div>
+              <!--  <div class="services__item">
+                    <i class="fa-solid fa-pen-to-square services__icon"></i>
+                    <h3 class="services__title">Testing</h3>
+                    <p class="services_description">Services with more than 3 years of experience. Providing quality work to clients and companies</p>
+                    
+                    <span class="services__no">08</span>
+                </div>-->
+            </div>
+        </section>
+
+
+    <!------------------------------------------------------------ SKILLS ------------------------------------------------------------>
+
+    <section class="skills section" id="skills">
+            <h2 class="section__title title-center" data-title="My Talent">
+                Professional skills
+            </h2>
+            <div class="skills__container container grid">
+
+                <div class="skills__item">
+                    <div class="skills__name">
+                        <h3 class="skills__name">Java</h3>
+                        <span class="skills__no">50%</span>
+                    </div>
+                    <p class="skills__description">
+                       Variables, while, for, for each, metodos, constructores, super, java swing, jdbc, jpa, POO, JSP
+                       Sockets, streams, lambda, vectores, colecciones, listas, linked list, colas.
+                    </p>
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 50%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skills__item">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Spring</h3>
+                                <span class="skills__no"></span>
+                            </div>
+                            <p class="skills__description">
+                              Configuracion de beans en xml mediante anotaciones, ciclo de vida de un bean.
+                              desarrollo de aplicaciones por capas, MVC, controladores, servicios. Spring data, integracion de bases de datos,
+                              uso de JPA. Desarrollo de APIs REST con Spring. Uso de anotaciones. Inyección de Dependencias.
+                              Patrones de diseño, singleton, builder, DTO. Metodos http, lombok, pom,
+                              Implementación de autenticación basada en tokens JWT (JSON Web Tokens),
+                                  manejo de maestros, querys y resultsets.
+                            </p>
+                            <div class="skills__bar">
+                                <div class="skills__percentage" style="width: 90%;">
+                                    <span></span>
+                                </div>
+                            </div>
+                </div>
+
+
+                <div class="skills__item">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Bases de datos y SQL</h3>
+                                        <span class="skills__no">30%</span>
+                                    </div>
+                                    <p class="skills__description">
+                                        Diseño de esquemas de bases de datos relacionales, Normalización de bases de datos, 
+                                        Consultas básicas: SELECT, INSERT, UPDATE, DELETE
+                                        Operadores lógicos y aritméticos
+                                        Funciones de agregación (SUM, AVG, COUNT, etc.).
+                                        Joins: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN
+                                        Subconsultas
+                                        Transacciones: COMMIT, ROLLBACK, SAVEPOINT
+                                        NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY
+                                        Stored Procedures
+                                        BBDD: MySQL, PostgreSQL, Azure
+                                    </p>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage" style="width: 30%;">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                </div>
+
+
+                <div class="skills__item">
+                                            <div class="skills__title">
+                                                <h3 class="skills__name">CSS</h3>
+                                                <span class="skills__no">65%</span>
+                                            </div>
+                                            <p class="skills__description">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti totam vero, expedita dolor nisi laboriosam architecto facere placeat quibusdam rerum tempora ipsam impedit facilis perspiciatis, in asperiores eveniet. Est!
+                                            </p>
+                                            <div class="skills__bar">
+                                                <div class="skills__percentage" style="width: 65%;"> 
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                </div>
+
+
+                <div class="skills__item">
+                                                    <div class="skills__title">
+                                                        <h3 class="skills__name">Javascript</h3>
+                                                        <span class="skills__no">80%</span>
+                                                    </div>
+                                                    <p class="skills__description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti totam vero, expedita dolor nisi laboriosam architecto facere placeat quibusdam rerum tempora ipsam impedit facilis perspiciatis, in asperiores eveniet. Est!
+                                                    </p>
+                                                    <div class="skills__bar">
+                                                        <div class="skills__percentage" style="width: 80%;">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                </div>
+
+
+                <div class="skills__item">
+                                                            <div class="skills__title">
+                                                                <h3 class="skills__name">HTML</h3>
+                                                                <span class="skills__no">20%</span>
+                                                            </div>
+                                                            <p class="skills__description">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti totam vero, expedita dolor nisi laboriosam architecto facere placeat quibusdam rerum tempora ipsam impedit facilis perspiciatis, in asperiores eveniet. Est!
+                                                            </p>
+                                                            <div class="skills__bar">
+                                                                <div class="skills__percentage" style="width: 20%;">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                </div>
+
+                <div class="skills__item">
+                    <div class="skills__title">
+                        <h3 class="skills__name">Docker</h3>
+                        <span class="skills__no">20%</span>
+                    </div>
+                    <p class="skills__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti totam vero, expedita dolor nisi laboriosam architecto facere placeat quibusdam rerum tempora ipsam impedit facilis perspiciatis, in asperiores eveniet. Est!
+                    </p>
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 20%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__item">
+                    <div class="skills__title">
+                        <h3 class="skills__name">Git-Github</h3>
+                        <span class="skills__no">20%</span>
+                    </div>
+                    <p class="skills__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti totam vero, expedita dolor nisi laboriosam architecto facere placeat quibusdam rerum tempora ipsam impedit facilis perspiciatis, in asperiores eveniet. Est!
+                    </p>
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 20%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__title">
+                        <h3 class="skills__name">Qlik</h3>
+                        <span class="skills__no">20%</span>
+                    </div>
+                    <p class="skills__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti totam vero, expedita dolor nisi laboriosam architecto facere placeat quibusdam rerum tempora ipsam impedit facilis perspiciatis, in asperiores eveniet. Est!
+                    </p>
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 20%;">
+                            <span></span>
+                        </div>
+                    </div>
+</div>
+
+<div class="skills__item">
+    <div class="skills__title">
+        <h3 class="skills__name">Pandas</h3>
+        <span class="skills__no">20%</span>
+    </div>
+    <p class="skills__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti totam vero, expedita dolor nisi laboriosam architecto facere placeat quibusdam rerum tempora ipsam impedit facilis perspiciatis, in asperiores eveniet. Est!
+    </p>
+    <div class="skills__bar">
+        <div class="skills__percentage" style="width: 20%;">
+            <span></span>
+        </div>
+    </div>
+</div>
+<div class="skills__item">
+    <div class="skills__title">
+        <h3 class="skills__name">Azure Databricks</h3>
+        <span class="skills__no">20%</span>
+    </div>
+    <p class="skills__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti totam vero, expedita dolor nisi laboriosam architecto facere placeat quibusdam rerum tempora ipsam impedit facilis perspiciatis, in asperiores eveniet. Est!
+    </p>
+    <div class="skills__bar">
+        <div class="skills__percentage" style="width: 20%;">
+            <span></span>
+        </div>
+    </div>
+</div>
+            </div>
+                
+    </section>
+
+
+
+    <!------------------------------------------------------------ PORTFOLIO ------------------------------------------------------------>
+
+        <section class="works section" id="works">
+            <h2 class="section__title title-center" data-title="My Portfolio">
+                Recent Works
+            </h2>
+
+            <div class="work__container container grid">
+                <div class="work__card">
+                    <img src="../img/Ecommerce.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                            Data management
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+            
+
+           
+                <div class="work__card">
+                    <img src="../img/Gestion.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                           Extract data
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+            
+
+           
+                <div class="work__card">
+                    <img src="../img/Marketing.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                           Clean data
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+           
+
+            
+                <div class="work__card">
+                    <img src="../img/Planeamiento.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                            Data analyst
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+            
+
+            
+                <div class="work__card">
+                    <img src="../img/trabajoColaborativo.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                            UX DESIGN
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+            
+
+           
+                <div class="work__card">
+                    <img src="../img/oficinas.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                            Photoshop
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+
+        </section>
+
+
+    <!------------------------------------------------------------ TESTIMONIAL ------------------------------------------------------------>
+
+    <section class="testimonials section" id="footer">
+        <h2 class="section__title title-center"  data-title="Testimonials">
+            What My Clients Say
+        </h2>
+        <div class="testimonials__container container grid">
+
+            <div class="testimonials__item">
+                <p class="testimonials__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui voluptatem quo voluptatum eius fugiat deserunt deleniti dolor ducimus consequatur vitae, velit quae perspiciatis. Deserunt tempore explicabo facilis at vero!
+
+                </p>
+
+                <div class="testimonials__data">
+                    <img src="../img/Marketing.jpg" alt="" class="testimonials__img">
+
+                    <div>
+                        <h3 class="testimonials__name">Pepe Rufian</h3>
+                        <span class="testimonials__identity">Seattle Washington</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonials__item">
+                <p class="testimonials__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui voluptatem quo voluptatum eius fugiat deserunt deleniti dolor ducimus consequatur vitae, velit quae perspiciatis. Deserunt tempore explicabo facilis at vero!
+
+                </p>
+
+                <div class="testimonials__data">
+                    <img src="../img/Ecommerce.jpg" alt="" class="testimonials__img">
+
+                    <div>
+                        <h3 class="testimonials__name">Pedro Picapiedra</h3>
+                        <span class="testimonials__identity">Buenos Aires</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!------------------------------------------------------------ CONTACT ------------------------------------------------------------>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title title-center" data-title="Get in touch">
+                Contact Me
+            </h2>
+
+            <div class="contact__container container grid" >
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <img class="contact__icon" src="../iconos/phone-symbol-of-an-auricular-inside-a-circle_icon-icons.com_56478.png" alt=""> </img>
+                        
+                        <div>
+                            <h3 class="contact__title">Call Us </h3>
+                            <span class="contact__data">11 6682-1579 </span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <img width="50" height="50" class="contact__icon" src="../iconos/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.png" alt="marker--v1"/>
+                        <div>
+                            <h3 class="contact__title">Email Us </h3>
+                                
+                            
+                            <span class="contact__data">sarfatilucas1@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <img class="contact__icon" src="../iconos/1491254387-pindestinationmaplocation_82942.png" alt="">
+                        <div>
+                            <h3 class="contact__title">Address </h3>
+                            <span class="contact__data">Moreto 969, Capital Federal </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="" class="contact__form">
+                        <div class="form__group">
+                            <div class="form__input">
+                                <input type="text" placeholder="Name" class="input__control" />
+                            </div>
+
+                            <div class="form__input">
+                                <input type="email" placeholder="Email" class="input__control" />
+                            </div>
+                        </div>
+                            <div class="form__input">
+                                <input type="text" placeholder="Subject" class="input__control" />
+                            </div>
+
+                            <div class="form__input">
+                                <textarea name=""  id=""  placeholder="Message" cols="30" rows="10" class="input__control textarea"></textarea>
+                            </div>
+
+                            <button class="btn contact__btn">Send Message</button>
+
+                        
+                </form>
+                
+            </div>
+            
+        </section>
+    </main>
+    <!------------------------------------------------------------ FOOTER ------------------------------------------------------------>
+        <footer class="footer">
+            <div class="footer__container container">
+                <p class="footer__copyright">
+                   &copy; 2023 Lucas. All rights Reserved
+                </p>
+            </div>
+        </footer>
+   
+</body>
+</html>
