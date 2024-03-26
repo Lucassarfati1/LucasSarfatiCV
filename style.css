@@ -108,6 +108,7 @@ img {
     font-weight: var(--weight-400);
     line-height: 1.2;
     margin-bottom: 1.5rem;
+    color: var(--first-color);
 }
 
 .section__title::before {
@@ -474,6 +475,7 @@ img {
 .resume__title {
     font-size: var(--h3-font-size);
 }
+
 
 .resume__date {
     color: var(--title-color);
