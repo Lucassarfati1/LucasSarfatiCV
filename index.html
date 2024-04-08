@@ -3,25 +3,72 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N4A6UgpDnjRMpMcTtQ2qVMyVnZ91l3xqihL4v3c4BtMBAB5pJX4tiUCPLO0z5CGLBZK0bpRht7VwcMZ7pPVSEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="iconos/address-card-solid.ico" type="image/x-icon">
+       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N4A6UgpDnjRMpMcTtQ2qVMyVnZ91l3xqihL4v3c4BtMBAB5pJX4tiUCPLO0z5CGLBZK0bpRht7VwcMZ7pPVSEg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
         <!-- css-->
         <link rel="stylesheet" href="style.css">
 
-        <title>Portfolio - Lucas Sarfati</title>
+        <title>Web Personal - Lucas Sarfati</title>
     </head>
 <body>
     <!------------------------------------------------------------ STYLE SWITCHER ------------------------------------------------------------>
-    <div class="style__switcher"></div>
+    <input type="radio" name="color" id="color-1">
+    <input type="radio" name="color" id="color-2">
+    <input type="radio" name="color" id="color-3">
+    <input type="radio" name="color" id="color-4">
+    <input type="radio" name="color" id="color-5">
+    <input type="radio" name="color" id="color-6">
+    <input type="radio" name="color" id="color-7">
+    <input type="radio" name="color" id="color-8">
+    <input type="radio" name="color" id="color-9">
+    <input type="radio" name="color" id="color-10">
+    <input type="checkbox" id="toggler">
+    <input type="checkbox" id="day-night">
+
+    <div class="style__switcher">
+        <label for="toggler" class="style__switcher-toggler">
+          <!-- css  <i class="fa-solid fa-gear fa-spin"></i>-->
+            <i class="fa">&#xf013;</i>
+        </label>
+
+        <label for="day-night" class="style__switcher-theme">
+          <!-- css <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>--> 
+            <i class="fa">&#xf185;</i>
+            <i class="fa">&#xf186;</i>
+        </label>
+
+        <h3 class="style__switcher-title">Theme Colors</h3>
+
+        <div class="style__switcher-colors">
+            <label for="color-1" class="color-1 color"></label>
+            <label for="color-2" class="color-2 color"></label>
+            <label for="color-3" class="color-3 color"></label>
+            <label for="color-4" class="color-4 color"></label>
+            <label for="color-5" class="color-5 color"></label>
+            <label for="color-6" class="color-6 color"></label>
+            <label for="color-7" class="color-7 color"></label>
+            <label for="color-8" class="color-8 color"></label>
+            <label for="color-9" class="color-9 color"></label>
+            <label for="color-10" class="color-10 color"></label>
+            <label for="color-1" class="color-1 color"></label>
+
+
+        </div>
+    </div>
 
     <!--------------------------------------------------------------HEADER----------------------------------------------------------------->
     <header class="header">
         <nav class="nav container">
-            <a href="LucasSarfati.html" class="nav__logo">Lucas</a>
+            <a href="index.html" class="nav__logo">Lucas</a>
 
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">Home</a>
+                    <a href="#home" class="nav__link active-link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#works" class="nav__link">Portfolio</a>
                 </li>
 
                 <li class="nav__item">
@@ -29,19 +76,22 @@
                 </li>
 
                 <li class="nav__item">
-                    <a href="#experiencia" class="nav__link">Experiencia</a>
+                    <a href="#qualification" class="nav__link">Experiencia</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#servicios" class="nav__link">Servicios</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#portafolio" class="nav__link">Portfolio</a>
+                    <a href="#services" class="nav__link">Servicios</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#contacto" class="nav__link">Contacto</a>
+                    <a href="#contact" class="nav__link">Contacto</a>
                 </li>
+
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Tecnologias - Conocimiento</a>
+                </li>
+
+                
 
             </ul>
         </nav>
@@ -51,7 +101,7 @@
 
     <main class="main">
 
-    <!------------------------------------------------------------ HOME ------------------------------------------------------------>
+    <!------------------------------------------------------------ INICIO ------------------------------------------------------------>
 
         <section class="home" id="home" >
             <div class="home__container container grid">
@@ -70,8 +120,8 @@
                         desafiantes donde pueda aplicar y ampliar mis habilidades. Me entusiasma colaborar en equipo
                         y aprender de manera constante.</p>
                     <div class="home__btns">
-                        <a href="#contacto" class="btn">Contratar</a>
-                        <a href="#portafolio" class="btn btn--transparent">Portafolio</a>
+                        <a href="#contact" class="btn">Contactame</a>
+                        <a href="#works" class="btn btn--transparent">Portfolio</a>
                     </div>    
                 </div>
 
@@ -82,8 +132,86 @@
             </div>
         </section>
 
+        <section class="works section" id="works">
+            <h2 class="section__title title-center" data-title="My Portfolio">
+                Proyectos recientes
+            </h2>
 
-    <!------------------------------------------------------------ ABOUT ------------------------------------------------------------>
+            <div class="work__container container grid">
+
+                <a href="https://lucassarfati1.github.io/BurgerShop/">
+                <div class="work__card">
+                    <img  src="img/BurgerShopMiniatura.png" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                            Data management
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+            </a>
+
+           
+                <div class="work__card">
+                    <img href="https://lucassarfati1.github.io/ValeShop/" src="img/Gestion.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                           Extract data
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+            
+
+           
+                <div class="work__card">
+                    <img src="img/Marketing.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                           Clean data
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+           
+
+            
+                <div class="work__card">
+                    <img src="img/Planeamiento.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                            Data analyst
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+            
+
+            
+                <div class="work__card">
+                    <img src="img/trabajoColaborativo.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                            UX DESIGN
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+            
+
+           
+                <div class="work__card">
+                    <img src="img/oficinas.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">
+                            Photoshop
+                        </h3>
+                        <span class="work__description">This is a short description</span>
+                    </div>
+                </div>
+
+        </section>
+    <!------------------------------------------------------------ SOBRE MI ------------------------------------------------------------>
 
         <section class="about section" id="about">
             <div class="about__container container grid">
@@ -94,29 +222,29 @@
                     <img src="img/Home.jpeg" alt="" class="about__img">
                 </div>
                 <div class="about__content">
-                    <h2 class="section__title" data-title="Who am i"> Yo soy Lucas Sarfati, un programador especializado en back end</h2>
+                    <h2 class="section__title" data-title="Sobre mi"> Yo soy Lucas Sarfati, un programador Full Stack</h2>
 
-                    <p class="about__description">Soy un entusiasta de la tecnología, empece mi formacion hace 4 años, hice varios bootcamps,
-                         cursos y arranque la carrera en analisis de sistema.
-                         Tambien hice proyectos personales, ultimamente estaba trabajando con tecnologías como
+                    <p class="about__description">Soy un entusiasta de la tecnología, empece mi formacion hace varios años, he participado de bootcamps,
+                         cursos y tambien hago materias de la carrera de analisis de sistema.
+                         He realizado proyectos personales, ultimamente estaba trabajando con tecnologías como
                            Docker Java SpringBoot APIs POO MySQL Jpa html Css y Javascript. Me encantaría formar parte de proyectos desafiantes. 
                            Estoy emocionado por introducirme en el mundo de la tecnología y aprender más sobre el desarrollo de aplicaciones.
                     </p>
 
                         <ul class="about__data grid">
                             <li class="data__item">
-                                <h3 class="data__title">Name:</h3>
+                                <h3 class="data__title">Nombre:</h3>
                                 <span class="data__description">Lucas Sarfati</span>
                             </li>
                             
                             <li class="data__item">
-                                <h3 class="data__title">Age:</h3>
+                                <h3 class="data__title">Edad:</h3>
                                 <span class="data__description">23 Años</span>
                             </li>
                             
                             <li class="data__item">
-                                <h3 class="data__title">From:</h3>
-                                <span class="data__description">Buenos Aires, Argentina</span>
+                                <h3 class="data__title">Zona:</h3>
+                                <span class="data__description">CABA, Argentina</span>
                             </li>
                             
                             <li class="data__item">
@@ -126,7 +254,7 @@
                         </ul>
 
                         <div class="about__bottom">
-                            <a href="" class="btn">Download Cv</a>
+                            <a href="https://drive.google.com/file/d/1HPchnHfgQsqrqbO2fQdcs9LKkN02aMHy/view?usp=drive_link" class="btn">Descargar Cv</a>
 
                             <div class="about__social-links">
                             
@@ -140,7 +268,7 @@
             </div>
         </section>
 
-    <!------------------------------------------------------------ QUALIFICATION ------------------------------------------------------------>
+    <!------------------------------------------------------------ FORMACION ------------------------------------------------------------>
         <section class="qualification section" id="qualification">
             <h2 class="section__title title-center" data-title="">
                 Formacion
@@ -372,8 +500,7 @@
             </div>
         </section>
 
-
-    <!------------------------------------------------------------ SERVICES ------------------------------------------------------------>
+    <!------------------------------------------------------------ SERVICIOS ------------------------------------------------------------>
 
         <section class="services section" id="services">
             <h2 class="section__title title-center" data-title="Servicios">
@@ -430,12 +557,77 @@
             </div>
         </section>
 
+    <!------------------------------------------------------------ PORTFOLIO ------------------------------------------------------------>
 
-    <!------------------------------------------------------------ SKILLS ------------------------------------------------------------>
 
-    <section class="skills section" id="skills">
-            <h2 class="section__title title-center" data-title="My Talent">
-                Tecnologias y habilidades
+    <!------------------------------------------------------------ CONTACTO ------------------------------------------------------------>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title title-center" data-title="Si quieres dejarme un mail">
+                Bienvenido
+            </h2>
+
+            <div class="contact__container container grid" >
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <img class="contact__icon" src="iconos/phone-symbol-of-an-auricular-inside-a-circle_icon-icons.com_56478.png" alt=""> </img>
+                        
+                        <div>
+                            <h3 class="contact__title">Numero de telefono</h3>
+                            <span class="contact__data">11 6682-1579 </span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <img width="50" height="50" class="contact__icon" src="iconos/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.png" alt="marker--v1"/>
+                        <div>
+                            <h3 class="contact__title">Correo electronico</h3>
+                                
+                            
+                            <span class="contact__data">sarfatilucas1@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <img class="contact__icon" src="iconos/1491254387-pindestinationmaplocation_82942.png" alt="">
+                        <div>
+                            <h3 class="contact__title">Ubicacion geografica </h3>
+                            <span class="contact__data">Parque Avellaneda, Capital Federal </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="https://formspree.io/f/mzbnkdpg"
+                method="POST" class="contact__form">
+                        <div class="form__group">
+                            <div class="form__input">
+                                <input type="text" name="name" id="name" placeholder="Nombre" class="input__control" />
+                            </div>
+
+                            <div class="form__input">
+                                <input type="email" name="email" placeholder="Email" class="input__control" />
+                            </div>
+                        </div>
+                            <div class="form__input">
+                                <input type="text" name="subject" id="subject" placeholder="Asunto" class="input__control" />
+                            </div>
+
+                            <div class="form__input">
+                                <textarea name="message"  id="message"  placeholder="Mensaje" cols="30" rows="10" class="input__control textarea"></textarea>
+                            </div>
+
+                            <button class="btn contact__btn">Enviar</button>
+
+                        
+                </form>
+                
+            </div>
+            
+        </section>
+<!------------------------------------------------------------ TECNOLOGIAS Y CONOCIMIENTO ------------------------------------------------------------>
+        <section class="skills section" id="skills">
+            <h2 class="section__title title-center" data-title="Mi alcance">
+                Tecnologias - Conocimiento
             </h2>
             <div class="skills__container container grid">
 
@@ -593,201 +785,6 @@
             </div>
                 
     </section>
-
-
-
-    <!------------------------------------------------------------ PORTFOLIO ------------------------------------------------------------>
-
-        <section class="works section" id="works">
-            <h2 class="section__title title-center" data-title="My Portfolio">
-                Proyectos recientes
-            </h2>
-
-            <div class="work__container container grid">
-                <div class="work__card">
-                    <img src="img/Ecommerce.jpg" alt="" class="work__img">
-                    <div class="work__details">
-                        <h3 class="work__title">
-                            Data management
-                        </h3>
-                        <span class="work__description">This is a short description</span>
-                    </div>
-                </div>
-            
-
-           
-                <div class="work__card">
-                    <img src="img/Gestion.jpg" alt="" class="work__img">
-                    <div class="work__details">
-                        <h3 class="work__title">
-                           Extract data
-                        </h3>
-                        <span class="work__description">This is a short description</span>
-                    </div>
-                </div>
-            
-
-           
-                <div class="work__card">
-                    <img src="img/Marketing.jpg" alt="" class="work__img">
-                    <div class="work__details">
-                        <h3 class="work__title">
-                           Clean data
-                        </h3>
-                        <span class="work__description">This is a short description</span>
-                    </div>
-                </div>
-           
-
-            
-                <div class="work__card">
-                    <img src="img/Planeamiento.jpg" alt="" class="work__img">
-                    <div class="work__details">
-                        <h3 class="work__title">
-                            Data analyst
-                        </h3>
-                        <span class="work__description">This is a short description</span>
-                    </div>
-                </div>
-            
-
-            
-                <div class="work__card">
-                    <img src="img/trabajoColaborativo.jpg" alt="" class="work__img">
-                    <div class="work__details">
-                        <h3 class="work__title">
-                            UX DESIGN
-                        </h3>
-                        <span class="work__description">This is a short description</span>
-                    </div>
-                </div>
-            
-
-           
-                <div class="work__card">
-                    <img src="img/oficinas.jpg" alt="" class="work__img">
-                    <div class="work__details">
-                        <h3 class="work__title">
-                            Photoshop
-                        </h3>
-                        <span class="work__description">This is a short description</span>
-                    </div>
-                </div>
-
-        </section>
-
-
-    <!------------------------------------------------------------ TESTIMONIAL ------------------------------------------------------------>
-    <!---
-    <section class="testimonials section" id="footer">
-        <h2 class="section__title title-center"  data-title="Testimonials">
-            What My Clients Say
-        </h2>
-        <div class="testimonials__container container grid">
-
-            <div class="testimonials__item">
-                <p class="testimonials__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui voluptatem quo voluptatum eius fugiat deserunt deleniti dolor ducimus consequatur vitae, velit quae perspiciatis. Deserunt tempore explicabo facilis at vero!
-
-                </p>
-
-                <div class="testimonials__data">
-                    <img src="img/Marketing.jpg" alt="" class="testimonials__img">
-
-                    <div>
-                        <h3 class="testimonials__name">Pepe Rufian</h3>
-                        <span class="testimonials__identity">Seattle Washington</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="testimonials__item">
-                <p class="testimonials__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui voluptatem quo voluptatum eius fugiat deserunt deleniti dolor ducimus consequatur vitae, velit quae perspiciatis. Deserunt tempore explicabo facilis at vero!
-
-                </p>
-
-                <div class="testimonials__data">
-                    <img src="img/Ecommerce.jpg" alt="" class="testimonials__img">
-
-                    <div>
-                        <h3 class="testimonials__name">Pedro Picapiedra</h3>
-                        <span class="testimonials__identity">Buenos Aires</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-    </section>-->
-
-    <!------------------------------------------------------------ CONTACT ------------------------------------------------------------>
-
-        <section class="contact section" id="contact">
-            <h2 class="section__title title-center" data-title="Get in touch">
-                Contactame
-            </h2>
-
-            <div class="contact__container container grid" >
-                <div class="contact__details">
-                    <div class="contact__item">
-                        <img class="contact__icon" src="iconos/phone-symbol-of-an-auricular-inside-a-circle_icon-icons.com_56478.png" alt=""> </img>
-                        
-                        <div>
-                            <h3 class="contact__title">Numero de telefono</h3>
-                            <span class="contact__data">11 6682-1579 </span>
-                        </div>
-                    </div>
-
-                    <div class="contact__item">
-                        <img width="50" height="50" class="contact__icon" src="iconos/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.png" alt="marker--v1"/>
-                        <div>
-                            <h3 class="contact__title">Correo electronico</h3>
-                                
-                            
-                            <span class="contact__data">sarfatilucas1@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__item">
-                        <img class="contact__icon" src="iconos/1491254387-pindestinationmaplocation_82942.png" alt="">
-                        <div>
-                            <h3 class="contact__title">Ubicacion geografica </h3>
-                            <span class="contact__data">Parque Avellaneda, Capital Federal </span>
-                        </div>
-                    </div>
-                </div>
-                
-                <form action="" class="contact__form">
-                        <div class="form__group">
-                            <div class="form__input">
-                                <input type="text" placeholder="Name" class="input__control" />
-                            </div>
-
-                            <div class="form__input">
-                                <input type="email" placeholder="Email" class="input__control" />
-                            </div>
-                        </div>
-                            <div class="form__input">
-                                <input type="text" placeholder="Subject" class="input__control" />
-                            </div>
-
-                            <div class="form__input">
-                                <textarea name=""  id=""  placeholder="Message" cols="30" rows="10" class="input__control textarea"></textarea>
-                            </div>
-
-                            <button class="btn contact__btn">Enviar</button>
-
-                        
-                </form>
-                
-            </div>
-            
-        </section>
     </main>
     <!------------------------------------------------------------ FOOTER ------------------------------------------------------------>
         <footer class="footer">
@@ -797,6 +794,24 @@
                 </p>
             </div>
         </footer>
-   
+   <script>
+    const form = document.getElementsByClassName('contact__form')
+    form.addEventListener('submit', handleSubmit)
+    async function handleSubmit(event) {
+        event.preventDefault()
+        const form = new FormData(this)
+        const response = await fetch(this.action, {
+            method: this.method,
+            body: form,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        if(response.ok){
+            this.reset()
+            alert('Gracias por contactarme, te escribire pronto')
+        }
+    } 
+   </script>
 </body>
 </html>
