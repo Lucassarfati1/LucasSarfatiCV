@@ -97,7 +97,6 @@ img {
 /*------------------------------------------------ REUSABLE CSS CLASSES -----------------------------------------------*/
 .container {
     max-width:1200px;
-  
     margin-inline: auto;
     padding-inline: 1rem;
 
@@ -327,7 +326,7 @@ input[type='checkbox'] {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     box-shadow: 0 3px 9px hsla(0,0,0,0.5);
 }
 .nav {
@@ -431,8 +430,7 @@ input[type='checkbox'] {
 
 .home__img {
     
-    z-index: 10;
-    position: relative;
+    /*position: relative;*/
     vertical-align: middle;
 }
 .btn {
@@ -1006,17 +1004,18 @@ input[type='checkbox'] {
 }
 
 :root {
-    --big-font-size: 3rem;
-    --h1-font-size:2.5rem;
-    --h2-font-size: 2.25rem;
-    --h3-font-size: 1.5rem;
-    --larger-font-size: 1.2rem;
-    --large-font-size: 1.125rem;
+    --big-font-size: 2.5rem;
+    --h1-font-size:2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --larger-font-size: 1rem;
+    --large-font-size: .938rem;
 
 }
 
 .home__img {
     width: 340px;
+    
 }
 
 .about__img-wrapper {
@@ -1072,7 +1071,8 @@ input[type='checkbox'] {
 
     .home__container,
     .about__container,
-    .resume__container {
+    .resume__container,
+    .contact__container {
         grid-template-columns: 1fr;
     }
 
@@ -1084,7 +1084,8 @@ input[type='checkbox'] {
         margin-inline: auto;
     }
 
-    .about__container {
+    .about__container,
+    .contact__container {
         row-gap: 2rem;
     }
 
@@ -1105,22 +1106,21 @@ input[type='checkbox'] {
         grid-template-columns: repeat(2, 1fr);
     }    
 
+    .resume__container {
+        row-gap: 2.5rem;
+    }
+
     
 }
-
-
-
-
-
 /* For medium devices */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .container {
         max-width: 560px;
     }
 
     .nav {
-        height: calc(var(--header-height));
+        height: calc(var(--header-height) + 1rem);
     }
 
     .nav__list {
@@ -1139,18 +1139,24 @@ input[type='checkbox'] {
 
     .nav__toggle {
         display: block;
-        color: var(--text-color);
+        color: var(--white);
         font-size: 1.3rem;
-       z-index: 1;
+       
     }
 
     #nav-toggler:checked ~ .nav__list {
         max-height: 500px;
         padding: 1.75rem;
     }
+    
+    .home__img {
+        width: 300px;
+    }
 }
 /*For small devices*/
 @media screen and (max-width: 576px) {
+
+    
     .home {
         padding-top: 7rem;
     }
@@ -1167,8 +1173,7 @@ input[type='checkbox'] {
     .services__container,
     .skills__container,
     .work__container,
-    .form__group
-    {
+    .form__group {
         grid-template-columns: 1fr;
     }
 
@@ -1179,6 +1184,10 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 450px) {
+
+    .home__img {
+        justify-items: center;
+    }
     .about__data {
         grid-template-columns: 1fr;
     }
@@ -1201,7 +1210,9 @@ input[type='checkbox'] {
         row-gap: .25rem;
     }
 
-    .resume__header {
+    .resume__header,
+    .skill__tittles,
+    .skills__description {
         padding-inline: 1rem;
     }
 
